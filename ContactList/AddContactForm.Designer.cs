@@ -32,6 +32,7 @@
             this.txtPhoneNumber = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.txtEmail = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtFullName
@@ -69,11 +70,22 @@
             this.txtEmail.Text = "Email";
             this.txtEmail.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(37, 203);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(113, 16);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Thông tin bổ sung";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // AddContactForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtPhoneNumber);
@@ -91,5 +103,6 @@
         private System.Windows.Forms.TextBox txtPhoneNumber;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.Label label1;
     }
 }

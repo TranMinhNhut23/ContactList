@@ -32,5 +32,10 @@ namespace ContactList
             MessageBox.Show("Đã lưu liên hệ!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
